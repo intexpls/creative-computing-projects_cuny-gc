@@ -1,0 +1,330 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ee76523f, #e73c7e42, #23a5d55c, #23d5ab77);
+  background-size: 800% 800%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+h1, h2, h3 {
+  margin-top: 0px;
+  line-height: 0.65em;
+}
+
+h1 {
+  margin-bottom: 21px;
+  font-family: "Crimson Pro", serif;
+  font-size: 26pt;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  font-size: 14pt;
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+li {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  font-size: 14pt;
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+.subhead {
+  display: none;
+}
+
+.section-btn:hover .subhead {
+  display: block;
+  font-size: 11pt;
+  color: rgb(89, 89, 89);
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 25%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
+#fly-front {
+  position: absolute;
+  z-index: 4;
+}
+
+#fly-middle {
+  position: absolute;
+  z-index: 2;
+}
+
+#fly-back {
+  position: absolute;
+  z-index: 1;
+}
+
+#main-container {
+  position: relative;
+  z-index: 3;
+  width: 55%;
+  height: 70%;
+  margin: 0 auto;
+  background-color: rgb(248, 248, 255);
+  padding: 40px 60px;
+  border: 2px rgb(13, 0, 255) solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+
+#sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 41%;
+    height: 47%;
+}
+
+#main-desc {
+    position: absolute;
+    top: 10%;
+    width: 85%;
+}
+
+.section-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.section-btn > .section-heading {
+  font-size: 16pt;
+  font-weight: 700;
+  color: #373737;
+  display: block;
+}
+
+.starburst {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 240px;
+    aspect-ratio: 1;
+    transition: .2s ease-in;
+    background: #ffe656;
+    clip-path: polygon(99.64% 55.95%,79.95% 63.86%,86.66% 84%,66.08% 78.82%,59.68% 99.05%,46.07% 82.77%,29% 95.37%,27.56% 74.2%,6.34% 74.36%,17.62% 56.39%,0.36% 44.05%,20.05% 36.14%,13.34% 16%,33.92% 21.18%,40.32% 0.95%,53.93% 17.23%,71% 4.63%,72.44% 25.8%,93.66% 25.64%,82.38% 43.61%);
+}
+
+.starburst:hover {
+  z-index: 1;
+  margin-top: -30px;
+  margin-left: -35px;
+  margin-right: -35px;
+  margin-bottom: -40px;
+  width: 350px;
+  aspect-ratio: .5;
+  transition: .4s ease-in;
+  background: #ffef97;
+  clip-path: polygon(99.64% 55.95%,79.95% 63.86%,86.66% 84%,66.08% 78.82%,59.68% 99.05%,46.07% 82.77%,29% 95.37%,27.56% 74.2%,6.34% 74.36%,17.62% 56.39%,0.36% 44.05%,20.05% 36.14%,13.34% 16%,33.92% 21.18%,40.32% 0.95%,53.93% 17.23%,71% 4.63%,72.44% 25.8%,93.66% 25.64%,82.38% 43.61%);
+}
+
+.flower {
+  margin-right: 10px;
+  margin-left: 0px;
+  width: 220px; 
+  aspect-ratio: 1;
+  background: #14b5ff;
+  transition: .2s ease-in;
+  --g:/21.98% 21.98% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+  mask: 99.268% 58.526% var(--g),86.837% 83.809% var(--g),62.711% 98.357% var(--g),34.549% 97.553% var(--g),11.293% 81.651% var(--g),0.326% 55.7% var(--g),5.13% 27.939% var(--g),24.18% 7.183% var(--g),51.428% 0.02% var(--g),78.222% 8.726% var(--g),96.056% 30.536% var(--g),radial-gradient(100% 100%,#000 37.43%,#0000 calc(37.43% + 1px));
+}
+
+.flower:hover {
+  z-index: 1;
+  margin-top: -40px;
+  margin-left: -40px;
+  margin-right: -30px;
+  margin-bottom: -40px;
+  width: 300px; 
+  aspect-ratio: 1;
+  color: black;
+  background: #6dd1ff;
+  transition: .4s ease-in-out;
+  --g:/21.98% 21.98% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+  mask: 99.268% 58.526% var(--g),86.837% 83.809% var(--g),62.711% 98.357% var(--g),34.549% 97.553% var(--g),11.293% 81.651% var(--g),0.326% 55.7% var(--g),5.13% 27.939% var(--g),24.18% 7.183% var(--g),51.428% 0.02% var(--g),78.222% 8.726% var(--g),96.056% 30.536% var(--g),radial-gradient(100% 100%,#000 37.43%,#0000 calc(37.43% + 1px));
+}
+
+.flower > p, .wavy-circle > p, .starburst > p {
+    transition: .1s ease-in-out;
+}
+
+.flower:hover > p, .wavy-circlr:hover > p, .starburst:hover > p {
+    transition: .1s ease-in-out;
+    font-size: 20pt;
+}
+
+
+.wavy-circle {
+  --s: 230px; /* adjust to control the size */
+  background: #ffb97b;
+  width: var(--s); 
+  transition: .2s ease-in-out;
+  aspect-ratio: 1;
+  --g:/calc(var(--s)*0.159) calc(var(--s)*0.159) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+  mask: calc(50% + var(--s)*0.393) calc(50% + var(--s)*0.045) var(--g),calc(50% + var(--s)*0.292) calc(50% + var(--s)*0.267) var(--g),calc(50% + var(--s)*0.079) calc(50% + var(--s)*0.387) var(--g),calc(50% + var(--s)*-0.164) calc(50% + var(--s)*0.36) var(--g),calc(50% + var(--s)*-0.344) calc(50% + var(--s)*0.195) var(--g),calc(50% + var(--s)*-0.393) calc(50% + var(--s)*-0.045) var(--g),calc(50% + var(--s)*-0.292) calc(50% + var(--s)*-0.267) var(--g),calc(50% + var(--s)*-0.079) calc(50% + var(--s)*-0.387) var(--g),calc(50% + var(--s)*0.164) calc(50% + var(--s)*-0.36) var(--g),calc(50% + var(--s)*0.344) calc(50% + var(--s)*-0.195) var(--g),radial-gradient(calc(var(--s)*0.431),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0.434) calc(50% + var(--s)*0.198) var(--g),calc(50% + var(--s)*0.235) calc(50% + var(--s)*0.415) var(--g),calc(50% + var(--s)*-0.054) calc(50% + var(--s)*0.474) var(--g),calc(50% + var(--s)*-0.322) calc(50% + var(--s)*0.352) var(--g),calc(50% + var(--s)*-0.467) calc(50% + var(--s)*0.095) var(--g),calc(50% + var(--s)*-0.434) calc(50% + var(--s)*-0.198) var(--g),calc(50% + var(--s)*-0.235) calc(50% + var(--s)*-0.415) var(--g),calc(50% + var(--s)*0.054) calc(50% + var(--s)*-0.474) var(--g),calc(50% + var(--s)*0.322) calc(50% + var(--s)*-0.352) var(--g),calc(50% + var(--s)*0.467) calc(50% + var(--s)*-0.095) var(--g);
+}
+
+.wavy-circle:hover {
+  z-index: 1;
+  margin-top: -40px;
+  margin-bottom: -40px;
+  margin-left: -30px;
+  margin-right: -40px; 
+  --s: 330px; /* adjust to control the size */
+  background: #ffc490;
+  width: var(--s); 
+  transition: .4s ease-in-out;
+  aspect-ratio: 1;
+  --g:/calc(var(--s)*0.159) calc(var(--s)*0.159) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+  mask: calc(50% + var(--s)*0.393) calc(50% + var(--s)*0.045) var(--g),calc(50% + var(--s)*0.292) calc(50% + var(--s)*0.267) var(--g),calc(50% + var(--s)*0.079) calc(50% + var(--s)*0.387) var(--g),calc(50% + var(--s)*-0.164) calc(50% + var(--s)*0.36) var(--g),calc(50% + var(--s)*-0.344) calc(50% + var(--s)*0.195) var(--g),calc(50% + var(--s)*-0.393) calc(50% + var(--s)*-0.045) var(--g),calc(50% + var(--s)*-0.292) calc(50% + var(--s)*-0.267) var(--g),calc(50% + var(--s)*-0.079) calc(50% + var(--s)*-0.387) var(--g),calc(50% + var(--s)*0.164) calc(50% + var(--s)*-0.36) var(--g),calc(50% + var(--s)*0.344) calc(50% + var(--s)*-0.195) var(--g),radial-gradient(calc(var(--s)*0.431),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0.434) calc(50% + var(--s)*0.198) var(--g),calc(50% + var(--s)*0.235) calc(50% + var(--s)*0.415) var(--g),calc(50% + var(--s)*-0.054) calc(50% + var(--s)*0.474) var(--g),calc(50% + var(--s)*-0.322) calc(50% + var(--s)*0.352) var(--g),calc(50% + var(--s)*-0.467) calc(50% + var(--s)*0.095) var(--g),calc(50% + var(--s)*-0.434) calc(50% + var(--s)*-0.198) var(--g),calc(50% + var(--s)*-0.235) calc(50% + var(--s)*-0.415) var(--g),calc(50% + var(--s)*0.054) calc(50% + var(--s)*-0.474) var(--g),calc(50% + var(--s)*0.322) calc(50% + var(--s)*-0.352) var(--g),calc(50% + var(--s)*0.467) calc(50% + var(--s)*-0.095) var(--g);
+}
+
+.yarn {
+  position: absolute;
+  offset-path: path('M100,140 345, 567 S600,-200 800,600');
+  animation: moveAlongPath 30s infinite alternate ease-in-out;
+  font-size: 12pt;
+}
+
+.thread {
+  position: absolute;
+  offset-path: path('M200,-100 700, 120 C100,100 950,1200 200,200 S500,-50 700,200');
+  animation: moveAlongPath 10s infinite alternate ease-in-out;
+  font-size: 30pt;
+}
+
+.scissors {
+  position: absolute;
+  offset-path: path('M386 100.73 C103.422 289.62 587.759 371.05 868.527 396.289C1039.48 411.656 1186.1 519.094 1273.69 666.699C1328.32 763.63 1273.54 885.766 1164.82 909.429L1158.26 910.857L946.805 935.643C802.267 952.586 656.043 924.059 528.472 854.032L334.103 747.337C256.19 704.568 194.075 637.904 156.912 557.166L136.896 513.681C59.176 344.835 122.015 144.567 282.264 50.3889C345.985 12.9403 419.646 -4.09855 493.339 1.56375L1113.73 49.2324C1199.57 55.8276 1274.57 109.706 1308.23 188.943C1342.95 270.688 1327.61 365.109 1268.8 431.664L1078.75 646.765C970.576 769.194 815.993 840.613 652.649 843.627L429.683 847.742C226.044 851.5 58.941 687.453 58.941 483.779C58.941 274.365 235.196 108.132 444.251 120.377L529.737 125.385C674.484 133.863 805.884 212.746 881.42 336.511L951.804 451.834C1013.12 552.293 1133.64 599.883 1247.04 568.415L1276.44 560.257C1373.1 533.437 1440 445.444 1440 345.136C1440 208.094 1317.68 103.403 1182.28 124.564L1116.55 134.836C1099.17 137.553 1082.08 141.901 1065.51 147.823L657.568 293.636C577.217 322.356 505.283 370.632 448.256 434.106L340.945 553.549C221.832 686.129 225.012 888.102 348.239 1016.87');
+  animation: moveAlongPath 10s infinite alternate ease-in-out;
+  font-size: 70pt;
+}
+
+.safety-pin {
+  position: absolute;
+  offset-path: path('M-400,500 900,-100 c200,50 950,1000 100,300 S800,40 100,700');
+  animation: moveAlongPath 10s infinite alternate ease-in-out;
+  font-size: 30pt;
+}
+
+.needle {
+  position: absolute;
+  offset-path: path('M0.1396 80.035C187.582 344.243 542.389 329.162 799.439 352.222C952.397 365.944 1084.36 460.526 1164.49 591.535C1214.01 676.777 1165.69 785.504 1069.23 805.872L1058.99 808.035L878.781 828.529C738.009 844.539 595.692 817.454 470.64 750.856L301.984 661.034C233.225 624.416 178.073 566.645 144.681 496.262L129.369 463.989C56.6205 310.653 114.348 127.16 261.784 43.0944C317.868 11.1168 382.216 -3.40117 446.597 1.39817L1023.93 44.4363C1099.03 50.0342 1164.88 96.6764 1195.07 165.657C1227.26 239.179 1213.18 324.755 1159.14 384.094L986.833 573.3C887.479 682.396 747.555 745.723 600.021 748.365L383.208 752.247C202.496 755.483 54.2612 609.878 54.2612 429.137C54.2612 243.453 210.373 95.961 395.758 106.496L488.152 111.746C618.399 119.148 737.01 189.127 806.475 299.552L869.87 400.328C926.41 490.205 1034.95 532.7 1137.49 505.098L1170.05 496.333C1256.45 473.073 1316.49 394.728 1316.49 305.251C1316.49 184.143 1208.68 91.4456 1088.94 109.602L1020.39 119.996C1004.82 122.356 989.505 126.14 974.628 131.299L596.311 262.492C526.177 286.813 463.107 328.025 412.671 382.491L312.185 491.005C204.109 607.714 206.965 788.792 318.667 902.035');
+  animation: moveAlongPath 10s infinite alternate ease-in-out;
+  font-size: 60pt;
+}
+
+.paint {
+  position: absolute;
+  offset-path: path('M-55.5 364.1C97.504 739.386 333.386 854.181 532.803 904.536C645.134 932.9 760.599 872.796 815.276 770.654L996.231 432.615C1040.97 349.043 1164.34 360.999 1192.2 451.606C1198.89 473.363 1212.37 492.409 1230.66 505.959L1267.92 533.564C1482.76 692.738 1327.99 1032.34 1066.91 974.613L806.883 917.118C735.366 901.304 671.943 860.246 628.239 801.469L433.008 538.905C406.65 503.457 388.296 462.712 379.214 419.483L365.17 352.639C321.513 144.842 525.213 -28.8491 723.5 47.0996L1260.75 201.079C1274.2 204.933 1286.09 212.93 1294.73 223.931C1326.17 263.957 1302.82 323.018 1252.52 330.74L745.02 408.634C677.492 418.999 615.132 450.942 567.265 499.687L548.575 518.72C363.684 707.002 43.1532 587.064 27.2771 323.658C14.2573 107.642 224.37 -52.652 429.27 16.9796L575.721 66.7485C692.442 106.414 784.138 198.014 823.927 314.692L877.712 472.416C945.138 670.137 1193.66 733.126 1347.12 591.388L1353.8 585.218C1408.75 534.468 1440 463.07 1440 388.271C1440 223.7 1293.1 97.977 1130.5 123.389L1090.42 129.654L342.508 286.433C147.958 327.215 35.8599 532.158 106.467 717.974C121.851 758.461 145.209 795.446 175.154 826.737L348.239 1007.6');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 30pt;
+}
+
+.pen {
+  position: absolute;
+  offset-path: path('M-50,-100 140,130 S10,500 800,200 c200,200 350,100 100,900 S200,200 800,200');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 25pt;
+}
+
+.shirt {
+  position: absolute;
+  offset-path: path('M950,-240 140,130 S10,500 800,200 c200,200 350,100 100,900 S200,200 800,200');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 25pt;
+}
+
+.t_shirt {
+  position: absolute;
+  offset-path: path('M-50,100 140,130 S10,500 800,200 c200,200 350,100 100,900 S200,200 800,200');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 25pt;
+}
+
+.jeans {
+  position: absolute;
+  offset-path: path('M-50,100 140,130 S10,500 800,200 c200,200 350,100 100,900 S200,200 800,200');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 25pt;
+}
+
+.clip {
+  position: absolute;
+  offset-path: path('M-10,-150 140,130 S10,500 800,200 c200,200 350,100 100,900 S200,200 800,200');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 25pt;
+}
+
+.note {
+  position: absolute;
+  offset-path: path('M900,-200 140,130 S10,500 800,200 c200,200 350,100 100,900 S200,200 800,200');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 25pt;
+}
+
+.pin {
+  position: absolute;
+  offset-path: path('M900,-200 140,130 S10,500 800,200 c200,200 350,100 100,900 S200,200 800,200');
+  animation: moveAlongPath 15s infinite alternate ease-in-out;
+  font-size: 35pt;
+}
+
+@keyframes moveAlongPath {
+  from { offset-distance: 0%; }
+  to   { offset-distance: 40%; }
+}
+
+.main-tool-link {
+  display: none;
+}
+
+.section-btn:hover .main-tool-link {
+  display: block;
+  color: rgb(76, 76, 76);
+  margin-bottom: 6px;
+  font-family: "Stack Sans Headline", sans-serif;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+.section-btn:hover .main-tool-link:hover {
+  text-decoration-color: blue;
+}

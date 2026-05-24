@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(-65deg,#6ad1f7bd, #f7e96abb, #ff212187);
+    background-size: 800% 800%;
+    animation: gradient 15s ease infinite;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 25%;
+    }
+    50% {
+        background-position: 75% 25%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-family: "Crimson Pro", serif;
+    font-size: 26pt;
+}
+
+p, label, select, button {
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+p {
+  font-size: 14pt;
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+label, select {
+  font-size: 13pt;
+}
+
+main {
+    background-color: rgb(255, 253, 247);
+    border: 2px rgb(0, 157, 255) solid;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+#main-container {
+    padding: 30px 50px;
+    z-index: 2;
+}
+
+label {
+    margin-right: 6px;
+    color: rgb(118, 118, 118);
+}
+
+select {
+    margin-top: 10px;
+    color: rgb(118, 118, 118);
+    padding: 4px 6px;
+}
+
+button {
+    margin-left: 15px;
+    padding: 7px 10px;
+    font-size: 13pt;
+    color: rgb(118, 118, 118);
+    border: none;
+    color: white;
+    background: rgba(0, 34, 255, 0.733);
+}
+
+button:hover {
+    color: rgb(9, 8, 8);
+    padding: 5px 8px;
+    border: 2px solid rgb(101, 101, 101);
+    background: rgba(0, 34, 255, 0.882)
+}
+
+#resultDisplay {
+    margin-top: 35px;
+}
+
+.lat-word, .item {
+    display: none;
+    border-radius: 4px;
+    height: 135px;
+    padding: 10px;
+    align-items: center;
+    justify-content:center;
+    border: 1px solid rgb(135, 135, 135);
+    background-color: rgb(252, 236, 255);
+}
+
+.lat-word {
+    width: 19%;
+}
+
+.lat-word > p {
+    font-size: 14pt;
+    text-align: center;
+}
+
+.item {
+    padding:15px;
+    width: 30%;
+    margin-right: 30px;
+    height: 225px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.lat-words-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#instructions > p {
+    font-size: 12pt;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}

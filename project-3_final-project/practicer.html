@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practicer</title>
+    <link rel="stylesheet" href="./styles/practicer-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div id="main-container">
+        <h1>Practicer</h1>
+        <p>Want to create something cool but don't have mental energy to design and plan? Let me give you a tutorial for creating something specific and cool.</p>
+        <button id="task-btn" onclick="getRandomPracticeTask()">Get a task</button> 
+        <div id="result">
+          <div id="results-ref">
+            <div id="task-image"></div>
+            <p id="task-link"></p>
+          </div>
+          <div id="results-info">
+            <p id="tag-type" class="tag"></p>
+            <p id="tag-area" class="tag"></p>
+            <p id="tag-scope" class="tag"></p>
+            <p id="tag-time" class="tag"></p>
+            <h2 id="task-name"></h2>
+            <p id="task-description"></p>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/practicer.js"></script>
+  </body>
+</html>

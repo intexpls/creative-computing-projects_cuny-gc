@@ -1,0 +1,79 @@
+<!DOCTYspanE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewspanort" content="width=device-width, initial-scale=1.0">
+    <meta httspan-equiv="X-UA-Comspanatible" content="ie=edge">
+    <title>Tasker</title>
+    <link rel="stylesheet" href="./styles/tasker-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div id="main-container">
+        <h1>Tasker</h1> 
+        <p>Want to create something but don't know where to start or what to do and it overwhelms you? Let me take this friction away.</p>
+        <div class="controls">
+          <div class="ind-control">
+            <label>Create a(n)</label>
+          <select id="itemType-filter">
+              <option value="none">Select...</option>
+              <option value="New thing">New thing</option>
+              <option value="Alteration">Alteration</option>
+            </select> 
+          </div>
+          <div class="ind-control">
+            <label>...on</label>
+          <select id="taskItem-filter">
+            <option value="none">Select...</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessory">Accessory</option>
+            <option value="Other">Other</option>
+            </select> 
+          </div>
+          <div class="ind-control">
+            <label>...that reqires to</label>
+            <select id="taskType-filter">
+              <option value="none">Select...</option>
+              <option value="Re-create this">Re-create this</option>
+              <option value="Try this">Try this</option>
+            </select> 
+          </div>
+          <div class="ind-control">
+            <label>...and has this score</label>
+          <select id="taskScope-filter">
+              <option value="none">Select...</option>
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Big">Big</option>
+            </select> 
+          </div>
+          <button id="task-btn" onclick="getRandomFilteredRow()">Get a task</button>
+        </div>
+
+        <div id="result">
+          <div id="results-ref">
+            <div id="task-image"></div>
+            <p id="task-link"></p>
+          </div>
+          <div id="results-info">
+            <p id="tag-time" class="tag"></p>
+            <p id="tag-area" class="tag"></p>
+            <p id="tag-item" class="tag"></p>
+            <h2 id="task-name"></h2>
+            <p id="task-description_gen"></p>
+            <p id="task-description_author"></p>
+            <hr>
+            <p id="task-description_ideas"></p>
+            <p id="task-description_step"></p>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+    <script src="./scripts/tasker.js"></script>
+  </body>
+</html>

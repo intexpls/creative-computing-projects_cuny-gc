@@ -1,0 +1,64 @@
+<!DOCTYspanE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewspanort" content="width=device-width, initial-scale=1.0">
+    <meta httspan-equiv="X-UA-Comspanatible" content="ie=edge">
+    <title>Idea Generator</title>
+    <link rel="stylesheet" href="./styles/idea-generator-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div id="main-container">
+        <h1>Ideas generator</h1>
+        <p>Want to create something completely outside of existing references but don't have a vision? Select a clothing item and see what comes in.</p>
+        <div>
+          <label>Clothing item</label>
+          <select id="clothingSelect">
+              <option value="none">Select...</option>
+              <option value="pants">Pants</option>
+              <option value="shorts">Shorts</option>
+              <option value="t-shirt">T-shirt</option>
+              <option value="shirt">Shirt</option>
+              <option value="sweather">Sweather</option>
+              <option value="underwear">Underwear</option>
+              <option value="swimsuit">Swimsuit</option>
+            </select>
+          
+          <button id="generateBtn">Get inspired</button>
+          
+          <div id="resultDisplay">
+
+            <ul id="wordList"></ul>
+            <div class="lat-words-box">
+              <div class="item">
+                <img src="" alt="" style="max-height: 230px; max-width: 100%;">
+              </div>
+              <div class="cards-box" style="display: none; flex-direction: column; width: 80%; justify-content: flex-start;"> 
+                <div id="instructions">
+                  <p>1. Apply each word to the item. E.g. [item] does [word]; [item] made out of [word]</p>
+                  <p>2. Then imagine how such item might look like and made in real life.</p>
+                  <p>3. For each card write down at least 3 ideas</p>
+                </div>
+                <div style="display: flex; flex-direction:row; justify-content: space-between; margin-top: 20px;"> 
+                  <div class="lat-word word1">
+                  </div>
+                  <div class="lat-word word2">
+                  </div>
+                  <div class="lat-word word3">
+                  </div>
+                  <div class="lat-word word4">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/idea-generator.js"></script>
+  </body>
+</html>
