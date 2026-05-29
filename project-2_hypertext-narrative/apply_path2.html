@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Design Trainer</title>
+    <link rel="stylesheet" href="styles/apply-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Stack+Sans+Headline:wght@200..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="story-box sb1">
+        <h1>Putting it all together</h1>
+        <p>Now it's time to apply what you've learned about constructive alignment. Take a look at the brief with fresh eyes and re-design the program core some key elements are aligned.</p>
+        <div class="project-brief"><img src="/assets/pdf-icon.png" width="19"><p>Project brief</p></div>
+      </div>
+      <div class="apply-interactive">
+        <div class="lo-col">
+          <h3>Learning objectives</h3>
+          <div class="lo-section"><textarea class="node lo1"></textarea></div>
+          <div class="lo-section"><textarea class="node lo2"></textarea></div>
+          <div class="lo-section"><textarea class="node lo3"></textarea></div>
+        </div>
+        <div class="measure-col">
+          <h3>Assessment</h3>
+          <div class="me-section">
+            <textarea class="node me1"></textarea>
+            <textarea class="node me1"></textarea>
+            <textarea class="node me1"></textarea>
+          </div>
+          <div class="me-section">
+            <textarea class="node me2"></textarea>
+            <textarea class="node me2"></textarea>
+            <textarea class="node me2"></textarea>
+          </div>
+          <div class="me-section">
+            <textarea class="node me3"></textarea>
+            <textarea class="node me3"></textarea>
+            <textarea class="node me3"></textarea>
+          </div>
+        </div>
+        <div class="content-col">
+          <h3>Teaching methods and content</h3>
+          <div class="cont-section">
+            <textarea class="node cont1"></textarea>
+            <textarea class="node cont1"></textarea>
+            <textarea class="node cont1"></textarea>
+            <textarea class="node cont1"></textarea>
+            <textarea class="node cont1"></textarea>
+          </div>
+          <div class="cont-section">
+            <textarea class="node cont2"></textarea>
+            <textarea class="node cont2"></textarea>
+            <textarea class="node cont2"></textarea>
+            <textarea class="node cont2"></textarea>
+            <textarea class="node cont2"></textarea>
+          </div>
+          <div class="cont-section">
+            <textarea class="node cont3"></textarea>
+            <textarea class="node cont3"></textarea>
+            <textarea class="node cont3"></textarea>
+            <textarea class="node cont3"></textarea>
+            <textarea class="node cont3"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="story-box sb2">
+        <p>Ugh, that sounds stressful with this weight of expectations! On the bright side, it might be your chance to impress your bosses and strengthened your position in the company.</p>
+        <div class="lesson-2"><a href='actualize.html'>Check your email</a></button>
+      </div>
+    </main>
+    <script>
+      const loS = document.querySelectorAll('.lo-section');
+      const measures = document.querySelectorAll('.me-section');
+      const contents = document.querySelectorAll('.cont-section');
+      
+
+      loS[0].style.height = contents[0].offsetHeight + 'px';
+      loS[1].style.height = contents[1].offsetHeight + 'px';
+      loS[2].style.height = contents[2].offsetHeight + 'px';
+
+      measures[0].style.height = contents[0].offsetHeight + 'px';
+      measures[1].style.height = contents[1].offsetHeight + 'px';
+      measures[2].style.height = contents[2].offsetHeight + 'px';
+
+    </script>
+  </body>
+</html>

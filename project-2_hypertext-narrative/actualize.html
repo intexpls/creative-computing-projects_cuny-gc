@@ -12,19 +12,20 @@
   </head>
   <body>
     <main>
-      <div class="story-box sb1" onClick="showEmails()">
+      <!-- <div class="story-box sb1" onClick="showEmails()">
         <img class='rise-shake' src="./assets/email-icon.png" width="200">
       </div>
+    -->
       <div class="emails"> <!-- Story insert starts -->
         <div class="email-header">
-          <p>Aboutlook</p>
+          <p>Overlook</p>
         </div>
         <div class="emails-content">
           <div id="email-chain"> <!-- Chain beginning -->
             <div id="email-chain-topic" class="email-content-box">
               <p>Course Redesign Request</p>
             </div>
-            <div class="email initial-email email-content-box">
+            <div class="email initial-email email-content-box"> <!-- Initial email -->
               <div class="email-info">
                 <div class="email-img img-boss">Boss</div>
                 <div class="email-from-to">
@@ -42,17 +43,145 @@
                   <p class="email-text">As per our discussion, I am attaching the info/materials about the course. Please take a look.</p>
                 </div>
                 <div class="email-replies">
-                  <div class="email-reply">
+                  <div class="email-reply-option">
                     <p class="reply">Hi,<br>I went over the materials. The feedback is quite something!</p>
                     <div class='reply-icon'><img src="./assets/send-email-icon.png" width="19"></div>
                   </div>
-                  
+                </div>
+              </div>
+            </div>
+            <div class="email email-reply email-darkened email-content-box"> <!-- Selected reply -->
+              <div class="email-info">
+                <div class="email-img img-you"><span>You</span></div>
+                <div class="email-from-to">
+                  <h4 class="email-name">You</h4>
+                </div>
+              </div>
+              <div class="darkened-content email-content"> 
+                <p class="email-text email-darkened-text">Hi, I went over the materials. The feedback is quite something!</p>
+              </div>
+            </div>
+            <div class="email email-reply email-content-box"> <!-- Story reply -->
+              <div class="email-info">
+                <div class="email-img img-boss">Boss</div>
+                <div class="email-from-to">
+                  <h4 class="email-name">I. M. Boss</h4>
+                  <h4 class="email-name">To: You</h4>
+                </div>
+              </div>
+              <div class="email-main-body">
+                <div class="email-content">
+                  <p class="email-text">Yeah, as I said it did not go that well. So can you take over and fix it?</p>
+                </div>
+                <div class="email-replies">
+                  <div class="email-reply-option">
+                    <p class="reply">Yes, I already know what to do!</p>
+                    <div class='reply-icon'><img src="./assets/send-email-icon.png" width="19"></div>
+                  </div>
+                  <div class="email-reply-option">
+                    <p class="reply">Yeah, but I don’t really know where to start/how to fix the issues.</p>
+                    <div class='reply-icon'><img src="./assets/send-email-icon.png" width="19"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email email-reply email-darkened email-content-box"> <!-- Selected reply -->
+              <div class="email-info">
+                <div class="email-img img-you"><span>You</span></div>
+                <div class="email-from-to">
+                  <h4 class="email-name">You</h4>
+                </div>
+              </div>
+              <div class="darkened-content email-content"> 
+                <p class="email-text email-darkened-text">Yes, I already know what to do!</p>
+              </div>
+            </div>
+            <div class="email email-reply email-darkened email-content-box"> <!-- Selected reply -->
+              <div class="email-info">
+                <div class="email-img img-you"><span>You</span></div>
+                <div class="email-from-to">
+                  <h4 class="email-name">You</h4>
+                </div>
+              </div>
+              <div class="darkened-content email-content"> 
+                <p class="email-text email-darkened-text">Yeah, but I don’t really know where to start/how to fix the issues.</p>
+              </div>
+            </div>
+            <div class="email email-reply email-content-box"> <!-- Story reply -->
+              <div class="email-info">
+                <div class="email-img img-boss">Boss</div>
+                <div class="email-from-to">
+                  <h4 class="email-name">I. M. Boss</h4>
+                  <h4 class="email-name">To: You</h4>
+                </div>
+              </div>
+              <div class="email-main-body">
+                <div class="email-content">
+                  <p class="email-text">Good!</p>
+                  <p class="email-text">Let me know when you are ready to show me something. You don’t need to spend too much time on it.</p>
+                </div>
+              </div>
+            </div>
+            <div class="email email-reply email-content-box"> <!-- Story reply -->
+              <div class="email-info">
+                <div class="email-img img-boss">Boss</div>
+                <div class="email-from-to">
+                  <h4 class="email-name">I. M. Boss</h4>
+                  <h4 class="email-name">To: You</h4>
+                </div>
+              </div>
+              <div class="email-main-body">
+                <div class="email-content">
+                  <p class="email-text">No problem. I can send you some links we wanted to go over before we launched but did not have time.</p>
+                </div>
+                <div class="email-replies">
+                  <div class="email-reply-option">
+                    <p class="reply">Yes, please!<br>Links will be greatly appreciated.</p>
+                    <div class='reply-icon'><img src="./assets/send-email-icon.png" width="19"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email email-reply email-darkened email-content-box"> <!-- Selected reply -->
+              <div class="email-info">
+                <div class="email-img img-you"><span>You</span></div>
+                <div class="email-from-to">
+                  <h4 class="email-name">You</h4>
+                </div>
+              </div>
+              <div class="darkened-content email-content"> 
+                <p class="email-text email-darkened-text">Yes, please! Links will be greatly appreciated.</p>
+              </div>
+            </div>
+            <div class="email email-reply email-content-box"> <!-- Story reply -->
+              <div class="email-info">
+                <div class="email-img img-boss">Boss</div>
+                <div class="email-from-to">
+                  <h4 class="email-name">I. M. Boss</h4>
+                  <h4 class="email-name">To: You</h4>
+                </div>
+              </div>
+              <div class="email-main-body">
+                <div class="email-content">
+                  <p class="email-text">Here you go</p>
+                  <ul>
+                    <li>Constructive alignment, intro (<a href="http://livelovelearn.education/KnowledgeBase/2017/08/18/constructive-alignment/" target="_blank">link</a>)</li>
+                    <li>How it transfers from the course to the lesson levels (<a href="https://www.teaching-learning.utas.edu.au/unit-design/constructive-alignment" target="_blank">link</a>)</li>
+                    <li>Examples of using constructive alignment on university courses (<a href="https://www.ntu.edu.sg/education/inspire/CTLP/teaching-and-learning-resources/obtl/constructive-alignment" target="_blank">link</a>)</li>
+                    <li>Intro into the process behind constructive alignment - backward design (<a href="https://www.rochester.edu/college/teaching/teaching-online/backward-design.html" target="_blank">link</a>)</li>
+                    <li>“Standard” vs backward design process in course design (<a href="https://citycollegeoer.commons.gc.cuny.edu/backward-design-p1/" target="_blank">link</a>)</li>
+                    <li>How to write learning objectives (<a href="https://cetl.uconn.edu/learning-objective-tip-sheet/" target="_blank">link</a>)</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div> <!-- Chain end -->
         </div>
       </div> <!-- Story insert ends -->
+      <div class="story-box sb2">
+        <div class="lesson-2"><a href='./apply_path1.html'>Take a pass</a></div>
+        <div class="lesson-2"><a href='./apply_path2.html'>I finished materials</a></div>
+      </div>
     </main>
     <script>
       const emails = document.querySelectorAll('.emails');

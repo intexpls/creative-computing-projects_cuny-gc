@@ -1,0 +1,233 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+    display: flex;
+	flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
+h1 {
+  margin-bottom: 21px;
+  font-family: "Crimson Pro", serif;
+  font-size: 27pt;
+}
+
+h2 {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    font-size: 24pt;
+}
+
+h3 {
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 12pt;
+    color: rgb(78, 78, 78);
+}
+p {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 13pt;
+  line-height: 1.4em;
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+.story-box {
+	padding-top: 5px;
+    margin: 0px 105px;
+}
+
+.messages {
+    display: none;
+    border-radius: 20px;
+    max-width: 800px;
+    padding: 30px 25px;
+    margin: 20px 0;
+    border: 3px solid #621f698b;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.message-name {
+    font-weight: 900;
+    margin-top: -3px;
+    margin-bottom: 4px;
+
+}
+
+.message-img {
+    width: 35px;
+    height: 35px;
+    margin-right: 14px;
+}
+
+.message-from > .message-img {
+    background-color: blue;
+}
+
+.message-to > .message-img {
+    background-color: rgb(255, 162, 0);
+}
+
+.message-name, .message-text {
+    font-family: "Lato", sans-serif;
+    font-size: 13pt;
+}
+
+.message-text {
+    margin-bottom: 3px;
+}
+
+button {
+    display: inline-block;
+    font-family: "Stack Sans Headline", sans-serif;
+	font-size: 13pt;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: rgb(36, 36, 255);
+    color: white;
+    font-weight: 900;
+}
+
+button:hover {
+    display: inline-block;
+    font-family: "Stack Sans Headline", sans-serif;
+	font-size: 13pt;
+    padding: 9px 14px;
+    border: 1px solid blue;
+    background-color: rgba(36, 36, 255, 0.346);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.progress-button .next-button {
+    display: none;
+}
+
+.lesson-2 {
+    display: inline-block;
+    font-family: "Stack Sans Headline", sans-serif;
+	font-size: 13pt;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: rgb(36, 36, 255);
+}
+
+.lesson-2 a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.lesson-2:hover {
+    display: inline-block;
+    font-family: "Stack Sans Headline", sans-serif;
+	font-size: 13pt;
+    padding: 9px 14px;
+    border: 1px solid blue;
+    background-color: rgba(36, 36, 255, 0.346);
+    color: rgb(62, 62, 62);
+    font-weight: 900;
+}
+
+.lesson-2 a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.sb2 {
+    display: none;
+}
+
+.messages-header {
+    padding: 20px 30px;
+    background-color: #611f69;
+    position: relative;
+    top: -33px;
+    left: -28px;
+    width: 760px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.messages-header p {
+    font-family: 'Lato';
+    color: white;
+    font-size: 20pt;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.apply-interactive {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    gap: 5%;
+    margin: 20px 0px;
+    padding: 30px 35px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 5px;
+}
+
+.node {
+    margin-bottom: 3px;
+}
+
+textarea {
+    field-sizing: content;
+    min-height: 1lh;
+    width: 250px;
+    padding: 7px;
+    border-radius: 3px;
+
+}
+
+.lo1, .me1, .cont1 {
+    border: 1px solid rgba(0, 0, 255, 0.481);
+}
+
+.lo2, .me2, .cont2 {
+    border: 1px solid rgba(255, 0, 0, 0.501);
+}
+
+.lo3, .me3, .cont3 {
+    border: 1px solid rgba(0, 221, 255, 0.487);
+}
+
+.project-brief p {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.project-brief {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid grey;
+    padding: 15px 10px;
+    margin-top: 15px;
+}
+
+.project-brief:hover {
+        border: 1px solid black;
+        color: white;
+        background: blue;
+}
